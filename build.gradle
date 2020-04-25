@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.github.tsvetilian-ty'
-version '1.6'
+version '1.06.0'
 
 repositories {
     mavenCentral()
@@ -26,8 +26,8 @@ apply plugin: 'maven'
 
 pluginBundle {
     website = 'https://github.com/tsvetilian-ty'
-    vcsUrl = 'https://github.com/tsvetilian-ty/Android-Build-Extention'
-    tags = ['android', 'build', 'info', 'information', 'extention']
+    vcsUrl = 'https://github.com/tsvetilian-ty/Android-Build-Extension'
+    tags = ['android', 'build', 'info', 'information', 'extension']
 }
 
 gradlePlugin {
@@ -35,7 +35,7 @@ gradlePlugin {
         BuildExtensionPlugin  {
             id = 'com.github.tsvetilian-ty.build-extension'
             displayName = 'Android Build Extension'
-            description = 'Reports additional information about the system accessible through Android BuildConfig'
+            description = 'A plugin for your Android project that gives you an additional information about the Build and the Builder.'
             implementationClass = 'com.github.ty.BuildExtension'
         }
     }
