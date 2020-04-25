@@ -10,6 +10,10 @@ class BuildExtension implements Plugin<Project> {
             addToConfig(target, "BUILD_DATE", new Date().format("dd.MM.yyyy"))
         }
 
+        def buildOnTime = target.task("buildTime") {
+            addToConfig(target, "BUILD_TIME", new Date().format("HH:mm:ss"))
+        }
+
         def buildOnMachine = target.task("buildMachine") {
             addToConfig(target, "BUILD_MACHINE", InetAddress.getLocalHost().hostName)
         }
@@ -38,8 +42,14 @@ class BuildExtension implements Plugin<Project> {
             addToConfig(target, "BUILD_GIT_USER_EMAIL", commandRunner("git config user.email"))
         }
 
-        groupSetter([buildOnDate, buildOnMachine, buildOnMachineUserProfile,
-                     buildOnMachineOs, gitBranch, gitEmail, gitHash, gitUser])
+        def gitLatestCommit = target.task("lastCommit") {
+            addToConfig(target, "BUILD_GIT_LAST_COMMIT", commandRunner("git show -s --format=%s"))
+        }
+
+        groupSetter([buildOnDate, buildOnTime, buildOnMachine,
+                     buildOnMachineUserProfile, buildOnMachineOs,
+                     gitBranch, gitEmail, gitHash, gitUser,
+                     gitLatestCommit])
     }
 
     private static void addToConfig(Project target, String key, String value) {
