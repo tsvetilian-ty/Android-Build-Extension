@@ -1,6 +1,6 @@
 # Android Build Extension
 
-A plugin for your Android build that gives you an additional information about the Build and the Builder.
+A plugin for your Android project that gives you an additional information about the Build and the Builder.
 
 > It's meant to be used for Debugging and/or QA purposes.
 
@@ -10,6 +10,7 @@ A plugin for your Android build that gives you an additional information about t
 - [How to use](#how-to-use)
     - [Machine Extensions](#how-to-use)
     - [Git Extensions](#how-to-use)
+- [License]()
 - [Gradle Page](https://plugins.gradle.org/plugin/com.github.tsvetilian-ty.build-extension)
 
 # Installation
@@ -57,3 +58,6 @@ List of all available `BuildConfig` extension values. All extensions should be c
 | `BUILD_GIT_USER_EMAIL` | - |
 | `BUILD_GIT_USER_NAME` | - |
 | `BUILD_GIT_LAST_COMMIT` | - |
+
+# License
+The Project is licensed under the terms of Apache License 2.0.
