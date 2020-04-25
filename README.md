@@ -27,7 +27,7 @@ A plugin for your Android project that gives you an additional information about
 
     ```groovy
    dependencies {
-        classpath "gradle.plugin.com.github.tsvetilian-ty:build-extension:1.6"
+        classpath "gradle.plugin.com.github.tsvetilian-ty:build-extension:2.00.0"
     }
     ```
     
