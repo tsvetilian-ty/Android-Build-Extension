@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.github.tsvetilian-ty'
-version '1.06.0'
+version '2.00.0'
 
 repositories {
     mavenCentral()
