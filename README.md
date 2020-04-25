@@ -10,7 +10,7 @@ A plugin for your Android project that gives you an additional information about
 - [How to use](#how-to-use)
     - [Machine Extensions](#how-to-use)
     - [Git Extensions](#how-to-use)
-- [License]()
+- [License](#license)
 - [Gradle Page](https://plugins.gradle.org/plugin/com.github.tsvetilian-ty.build-extension)
 
 # Installation
